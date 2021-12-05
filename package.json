@@ -1,0 +1,15 @@
+{
+  "name": "mtv-ads",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "init": "lerna init"
+  }
+}
