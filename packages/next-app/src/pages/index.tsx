@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import { useState, useEffect, useCallback } from "react";
 import { ethers } from "ethers";
 import { Storage__factory } from "@/typechain";
-import { Button, Box, Text, Container, Input } from "@/components/primitives";
 import { hasEthereum } from "@/utils";
 import Head from "next/head";
 
@@ -56,54 +55,12 @@ const Home: NextPage = () => {
   }, [memoizedFetchStore]);
 
   return (
-    <Box
-      css={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: "10rem",
-      }}
-    >
+    <div>
       <Head>
         <title>Solidity Full-Stack Dapp Starter</title>
       </Head>
-      <Container size={{ "@initial": "1", "@bp1": "2" }}>
-        <Text as="h1">Solidity Full-Stack Dapp Starter</Text>
-        <Box css={{ textAlign: "center" }}>
-          <Text>Store Value : {currentStore} </Text>
-          <Text>transaction status : {status} </Text>
-          <Box
-            as="label"
-            css={{
-              position: "absolute",
-              width: "1px",
-              height: "1px",
-              padding: 0,
-              margin: "-1px",
-              overflow: "hidden",
-              clip: "rect(0, 0, 0, 0)",
-              whiteSpace: "nowrap",
-              borderWidth: 0,
-            }}
-            htmlFor="store-input"
-          >
-            Input text
-          </Box>
-          <Input
-            id="store-input"
-            name="store-input"
-            value={inputState}
-            type="text"
-            onChange={(e) => setInputState(e.target.value)}
-          />
-          <Box css={{ marginTop: "$2" }}>
-            <Button type="button" onClick={setStore} color="purple">
-              Set new value to store
-            </Button>
-          </Box>
-        </Box>
-      </Container>
-    </Box>
+      <div className="text-red-500">Yo yo</div>
+    </div>
   );
 };
 
