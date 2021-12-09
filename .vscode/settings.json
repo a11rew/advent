@@ -67,7 +67,7 @@
   "solidity.validationDelay": 1500,
   "eslint.workingDirectories": [
     { "directory": "packages/hardhat", "changeProcessCWD": true },
-    { "directory": "packages/next-app", "changeProcessCWD": true }
+    { "directory": "packages/client", "changeProcessCWD": true }
   ],
   "mochaExplorer.env": {
     "HARDHAT_CONFIG": "hardhat.config.ts",
@@ -75,5 +75,5 @@
   },
   "mochaExplorer.cwd": "packages/hardhat",
   "mochaExplorer.mochaPath": "packages/hardhat/node_modules/mocha",
-  "mochaExplorer.files": "packages/hardhat/test/**/*.ts",
+  "mochaExplorer.files": "packages/hardhat/test/**/*.ts"
 }

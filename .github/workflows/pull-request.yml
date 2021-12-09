@@ -48,4 +48,4 @@ jobs:
         with:
           start: yarn start
           wait-on: http://localhost:3000
-          working-directory: packages/next-app
+          working-directory: packages/client
