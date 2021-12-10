@@ -1,12 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "../assets/logo.png";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 
 const Header: React.FC = (): JSX.Element => {
+  const [animate, setAnimate] = useState(false);
+
+  const onScroll = () => {
+    var y = window.scrollY;
+    console.log("scroll", y);
+    console.log(animate);
+
+    if (y > 50) {
+      setAnimate(true);
+    } else setAnimate(false);
+  };
+
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", onScroll);
+  }
+
   return (
-    <header className="h-16 z-50 w-full text-lg sticky top-0 shadow-md">
+    <header
+      className={`h-16 z-50 w-full text-lg sticky top-0 transition-all duration-500 ease-in-out
+      ${animate && "shadow-md bg-white"}
+    `}
+    >
       <div className="max-w-screen-2xl m-auto px-4 md:px-10 h-full flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="h-10 w-10 rounded-full overflow-hidden">
