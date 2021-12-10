@@ -49,11 +49,13 @@ const Home: NextPage = () => {
 };
 
 const AnimatedGlobe = motion(
-  React.forwardRef((props, ref) => (
-    <div ref={ref as any} {...props}>
+  React.forwardRef<HTMLDivElement>((props, ref) => (
+    <div ref={ref} {...props}>
       <Image draggable="false" src={WorldImage} alt="Matrix World Globe" />
     </div>
   ))
 );
+
+AnimatedGlobe.displayName = "animated globe";
 
 export default Home;
