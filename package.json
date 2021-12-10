@@ -53,5 +53,9 @@
   "devDependencies": {
     "eslint": "^8.2.0",
     "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-icons": "^4.3.1"
   }
 }

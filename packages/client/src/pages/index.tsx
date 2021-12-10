@@ -57,7 +57,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Solidity Full-Stack Dapp Starter</title>
+        <title>Advent</title>
       </Head>
       <div className="text-red-500">Yo yo</div>
     </div>
