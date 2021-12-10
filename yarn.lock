@@ -4069,6 +4069,7 @@ __metadata:
     eslint-config-next: 12.0.3
     eslint-plugin-testing-library: ^5.0.0
     ethers: ^5.5.1
+    framer-motion: ^5.4.5
     identity-obj-proxy: ^3.0.0
     jest: ^27.3.1
     next: 12.0.3
@@ -10371,7 +10372,6 @@ __metadata:
   resolution: "mtv-ads@workspace:."
   dependencies:
     eslint: ^8.2.0
-    framer-motion: ^5.4.5
     prettier: ^2.4.1
     react: ^17.0.2
     react-icons: ^4.3.1
