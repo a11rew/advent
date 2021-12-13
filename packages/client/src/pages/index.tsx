@@ -7,41 +7,43 @@ import WorldImage from "../assets/world.png";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="min-h-screen w-full flex justify-center">
       <Head>
         <title>Advent</title>
       </Head>
-      <div className="flex flex-col-reverse md:flex-row p-4 max-w-screen-2xl justify-between m-auto">
-        <div className="md:w-1/2 flex flex-col justify-center gap-4 text-lg p-4">
-          <div className="flex flex-col justify-center gap-4 text-lg p-4">
-            <h1 className="text-2xl font-bold">
-              Discover and sell advertising spaces on MatrixWorld
-            </h1>
-            <p>
-              Advent is a marketplace for trading and listing ad spaces in
-              MatrixWorld.
-            </p>
-            <div className="flex gap-4">
-              <button className="px-8 py-2 bg-primaryGreen text-white rounded-md hover:bg-opacity-70 transition-all duration-200 ease-in-out">
-                Explore
-              </button>
-              <button className="px-8 py-2 bg-white border border-primaryGreen rounded-md transition-all duration-200 ease-in-out hover:shadow-lg">
-                Advertise
-              </button>
+      <div className="max-w-[1600px] flex w-full items-center">
+        <div className="w-full flex flex-col-reverse justify-end md:flex-row md:justify-between">
+          <div className="md:w-1/2 flex flex-col justify-center gap-4 text-lg p-4">
+            <div className="flex flex-col justify-center gap-4 text-lg p-4">
+              <h1 className="text-2xl font-bold">
+                Discover and sell advertising spaces on MatrixWorld
+              </h1>
+              <p>
+                Advent is a marketplace for trading and listing ad spaces in
+                MatrixWorld.
+              </p>
+              <div className="flex gap-4">
+                <button className="px-8 py-2 bg-primaryGreen text-white rounded-md hover:bg-opacity-70 transition-all duration-200 ease-in-out">
+                  Explore
+                </button>
+                <button className="px-8 py-2 bg-white border border-primaryGreen rounded-md transition-all duration-200 ease-in-out hover:shadow-lg">
+                  Advertise
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="p-5">
-          <AnimatedGlobe
-            animate={{
-              rotate: [0, 360],
-            }}
-            transition={{
-              duration: 200,
-              ease: "linear",
-              repeat: Infinity,
-            }}
-          />
+          <div className="flex items-center px-4">
+            <AnimatedGlobe
+              animate={{
+                rotate: [0, 360],
+              }}
+              transition={{
+                duration: 200,
+                ease: "linear",
+                repeat: Infinity,
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -24,11 +24,11 @@ const Header: React.FC = (): JSX.Element => {
 
   return (
     <header
-      className={`h-16 z-50 w-full text-lg sticky top-0 transition-all duration-500 ease-in-out
+      className={`h-16 z-50 w-full text-lg fixed top-0 transition-all duration-500 ease-in-out
       ${animate && "shadow-md bg-white"}
     `}
     >
-      <div className="max-w-screen-2xl m-auto px-4 md:px-10 h-full flex items-center justify-between">
+      <div className="max-w-[1600px] m-auto px-4 h-full flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="h-10 w-10 rounded-full overflow-hidden">
             <Image src={Logo} alt="Advent Logo" />
