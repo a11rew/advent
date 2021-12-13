@@ -1102,6 +1102,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/react@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@headlessui/react@npm:1.4.2"
+  peerDependencies:
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+  checksum: 28c36204430365190c05cbd48235f8239897360c8d55189583c03868fe640b171051238a8672a501b441de79281bb08285966105bfeb4534ca0e612382dcd41f
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.5.0":
   version: 0.5.0
   resolution: "@humanwhocodes/config-array@npm:0.5.0"
@@ -4055,6 +4065,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "client@workspace:packages/client"
   dependencies:
+    "@headlessui/react": ^1.4.2
     "@testing-library/cypress": ^8.0.1
     "@testing-library/jest-dom": ^5.15.0
     "@testing-library/react": ^12.1.2
@@ -4076,6 +4087,7 @@ __metadata:
     postcss: latest
     react: 17.0.2
     react-dom: 17.0.2
+    react-icons: ^4.3.1
     react-test-renderer: ^17.0.2
     tailwindcss: latest
     typescript: 4.4.4

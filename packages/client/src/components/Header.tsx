@@ -3,6 +3,7 @@ import Image from "next/image";
 import Logo from "../assets/logo.png";
 import { MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import WalletPopover from "./WalletPopover";
 
 const Header: React.FC = (): JSX.Element => {
   const [animate, setAnimate] = useState(false);
@@ -41,7 +42,7 @@ const Header: React.FC = (): JSX.Element => {
             <CgProfile />
           </a>
           <a className="text-2xl">
-            <MdOutlineAccountBalanceWallet />
+            <WalletPopover />
           </a>
         </nav>
       </div>
