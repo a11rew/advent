@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Logo from "../assets/logo.png";
-import { MdOutlineAccountBalanceWallet } from "react-icons/md";
+import { GoThreeBars } from "react-icons/go";
 import { CgProfile } from "react-icons/cg";
 import WalletPopover from "./WalletPopover";
 
@@ -44,6 +44,9 @@ const Header: React.FC = (): JSX.Element => {
           <a className="text-2xl">
             <WalletPopover />
           </a>
+        </nav>
+        <nav className="md:hidden">
+          <GoThreeBars />
         </nav>
       </div>
     </header>
