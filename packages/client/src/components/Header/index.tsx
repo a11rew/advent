@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Logo from "../assets/logo.png";
+import Logo from "@/assets/logo.png";
 import { GoThreeBars } from "react-icons/go";
 import { CgProfile } from "react-icons/cg";
-import WalletPopover from "./WalletPopover";
+import WalletPopover from "../WalletPopover";
+import SlideOver from "./SlideOver";
 
 const Header: React.FC = (): JSX.Element => {
   const [animate, setAnimate] = useState(false);
@@ -46,7 +47,7 @@ const Header: React.FC = (): JSX.Element => {
           </a>
         </nav>
         <nav className="md:hidden">
-          <GoThreeBars />
+          <SlideOver />
         </nav>
       </div>
     </header>
