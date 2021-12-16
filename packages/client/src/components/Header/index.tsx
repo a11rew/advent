@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "@/assets/logo.png";
-import { GoThreeBars } from "react-icons/go";
 import { CgProfile } from "react-icons/cg";
 import WalletPopover from "../WalletPopover";
 import SlideOver from "./SlideOver";
@@ -30,15 +30,17 @@ const Header: React.FC = (): JSX.Element => {
     `}
     >
       <div className="max-w-[1600px] m-auto px-4 h-full flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="h-10 w-10 rounded-full overflow-hidden">
-            <Image src={Logo} alt="Advent Logo" />
+        <Link href="/" passHref>
+          <div className="flex items-center gap-2 cursor-pointer">
+            <div className="h-10 w-10 rounded-full overflow-hidden">
+              <Image src={Logo} alt="Advent Logo" />
+            </div>
+            <p className="text-xl font-bold tracking-wider">Advent</p>
           </div>
-          <p className="text-xl font-bold tracking-wider">Advent</p>
-        </div>
+        </Link>
         <nav className="md:flex items-center gap-4 hidden">
-          <a>Explore</a>
-          <a>Advertise</a>
+          <Link href={"/explore"}>Explore</Link>
+          <Link href={"/"}>Advertise</Link>
           <a className="text-2xl">
             <CgProfile />
           </a>
