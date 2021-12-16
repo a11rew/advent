@@ -5,6 +5,7 @@ import Logo from "@/assets/logo.png";
 import { CgProfile } from "react-icons/cg";
 import WalletPopover from "../WalletPopover";
 import SlideOver from "./SlideOver";
+import WalletModal from "../WalletModal";
 
 const Header: React.FC = (): JSX.Element => {
   const [animate, setAnimate] = useState(false);
@@ -14,7 +15,7 @@ const Header: React.FC = (): JSX.Element => {
     console.log("scroll", y);
     console.log(animate);
 
-    if (y > 50) {
+    if (y > 30) {
       setAnimate(true);
     } else setAnimate(false);
   };
@@ -38,15 +39,17 @@ const Header: React.FC = (): JSX.Element => {
             <p className="text-xl font-bold tracking-wider">Advent</p>
           </div>
         </Link>
-        <nav className="md:flex items-center gap-4 hidden">
+        <nav className="md:flex gap-4 hidden">
           <Link href={"/explore"}>Explore</Link>
           <Link href={"/advertise"}>Advertise</Link>
 
           <a className="text-2xl">
-            <WalletPopover />
+            {/* <WalletPopover /> */}
+            <WalletModal />
           </a>
         </nav>
-        <nav className="md:hidden">
+        <nav className="md:hidden flex items-baseline gap-2 text-xl">
+          <WalletModal />
           <SlideOver />
         </nav>
       </div>
