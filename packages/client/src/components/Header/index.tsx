@@ -40,10 +40,8 @@ const Header: React.FC = (): JSX.Element => {
         </Link>
         <nav className="md:flex items-center gap-4 hidden">
           <Link href={"/explore"}>Explore</Link>
-          <Link href={"/"}>Advertise</Link>
-          <a className="text-2xl">
-            <CgProfile />
-          </a>
+          <Link href={"/advertise"}>Advertise</Link>
+
           <a className="text-2xl">
             <WalletPopover />
           </a>

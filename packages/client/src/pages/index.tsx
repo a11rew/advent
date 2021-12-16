@@ -29,9 +29,11 @@ const Home: NextPage = () => {
                     Explore
                   </button>
                 </Link>
-                <button className="px-8 py-2 bg-white border border-primaryGreen rounded-md transition-all duration-200 ease-in-out hover:shadow-lg">
-                  Advertise
-                </button>
+                <Link passHref href={"/advertise"}>
+                  <button className="px-8 py-2 bg-white border border-primaryGreen rounded-md transition-all duration-200 ease-in-out hover:shadow-lg">
+                    Advertise
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
