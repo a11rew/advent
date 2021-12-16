@@ -2,6 +2,7 @@ import React from "react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import WorldImage from "../assets/world.png";
 
@@ -23,9 +24,11 @@ const Home: NextPage = () => {
                 MatrixWorld.
               </p>
               <div className="flex gap-4">
-                <button className="px-8 py-2 bg-primaryGreen text-white rounded-md hover:bg-opacity-70 transition-all duration-200 ease-in-out">
-                  Explore
-                </button>
+                <Link passHref href={"/explore"}>
+                  <button className="px-8 py-2 bg-primaryGreen text-white rounded-md hover:bg-opacity-70 transition-all duration-200 ease-in-out">
+                    Explore
+                  </button>
+                </Link>
                 <button className="px-8 py-2 bg-white border border-primaryGreen rounded-md transition-all duration-200 ease-in-out hover:shadow-lg">
                   Advertise
                 </button>
