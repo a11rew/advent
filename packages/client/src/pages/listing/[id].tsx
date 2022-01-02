@@ -14,7 +14,7 @@ const Listing = () => {
         <title>Listing for Matrix Land (95, 34)</title>
       </Head>
       <div className="max-w-screen-xl m-auto h-screen flex flex-col items-center gap-4 md:gap-0 md:flex-row pt-20 md:pt-0">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 md:pr-8">
           <img
             className="rounded-lg hover:scale-[1.01] transition-all ease-in-out duration-200"
             src="https://lh3.googleusercontent.com/8s7ZsdSNTN2-3kwR-jJsAjltBA8zI7BMeyUTfgaXYfw55f-KpkWvM8iC7dY1HDfby3NIiHISTW8eauhsR4GfywvgRXfsY1h485_p6h8=w546"
@@ -46,7 +46,7 @@ const Listing = () => {
               <p className="text-lg pl-1 mb-1">Price</p>
               <div className="flex text-4xl">
                 <SiEthereum className="text-4xl" />
-                <p>10</p>
+                <p>0.3</p>
               </div>
             </div>
 
